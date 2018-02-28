@@ -6,13 +6,14 @@ import styles from "./styles";
 
 
 const FootButton = ({ onPress, text, logintext, boldtext }) => (
-    <View style={styles.footbutton}>
-        <TouchableOpacity onPress={onPress} style={styles.footTouchable}>
-            <Text style={styles.text}>{logintext}</Text>
-        </TouchableOpacity>
+    <View style={styles.footTouchable}>
         <View>
-            <Text style={styles.boldtext}>{boldtext}</Text>
+            <Text style={styles.foottouchabletext}>{logintext}</Text>
         </View>
+        <TouchableOpacity onPress={onPress} style={styles.FootButton}>
+            <Text style={styles.boldtext}>{boldtext}</Text>
+        </TouchableOpacity>
+
     </View>
 
 );

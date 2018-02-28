@@ -5,17 +5,19 @@ import { Text, View, TouchableHighlight, Image } from 'react-native';
 
 const GoogleLogin = ({ text, onPress }) => (
 
-    <View style={styles.container}>
-        <TouchableHighlight onPress={onPress} style={styles.buttonContainer}>
+
+    <TouchableHighlight onPress={onPress} style={styles.container}>
+        <View style={styles.buttonContainer}>
             <Image
                 resizeMode="contain"
                 source={require('./images/google.png')}
                 style={styles.icon}
             />
+            <Text style={styles.text}>{text}</Text>
+        </View>
+    </TouchableHighlight>
 
-        </TouchableHighlight>
-        <Text style={styles.text}>{text}</Text>
-    </View>
+
 
 );
 

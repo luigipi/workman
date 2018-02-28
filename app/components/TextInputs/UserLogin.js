@@ -5,7 +5,7 @@ import { Text, View, TextInput, StatusBar, TouchableHighlight, TouchableOpacity,
 import styles from "./styles";
 
 
-class UserRegTextInput extends Component {
+class UserLogin extends Component {
     constructor(props) {
         super(props);
     }
@@ -47,4 +47,6 @@ class UserRegTextInput extends Component {
     }
 }
 
-export default UserRegTextInput;
+
+
+export default UserLogin;

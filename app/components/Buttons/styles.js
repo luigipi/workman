@@ -35,6 +35,13 @@ export default EStyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         height: BUTTON_HEIGHT,
+        flexDirection: 'row',
+    },
+    emailbuttonContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: BUTTON_HEIGHT,
+        flexDirection: 'row',
     },
     footbutton: {
         paddingTop: 0,
@@ -45,7 +52,24 @@ export default EStyleSheet.create({
         fontSize: 18,
         marginLeft: 2,
     },
-    footTouchable: {
+    signuptext: {
+        fontSize: 18,
+        paddingLeft: 40,
+        color: '$buttonText',
 
+    },
+    foottouchabletext: {
+        fontSize: 16,
+        fontWeight: '300',
+        paddingVertical: 20,
+        color: '$primaryOrange',
+        paddingLeft: 30,
+
+    },
+    footTouchable: {
+        width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 3,
     },
 })

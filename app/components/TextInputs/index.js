@@ -1,8 +1,10 @@
-import userRegText from "./userRegText";
+import UserRegTextInput from "./UserRegTextInput";
+import UserLogin from './UserLogin';
+
 
 import styles from "./styles";
 
 
 
 
-export { userRegText, styles };
+export { UserRegTextInput, UserLogin, styles };

@@ -5,9 +5,10 @@ import EStyleSheet from "react-native-extended-stylesheet";
 
 EStyleSheet.build({
     $primaryOrange: '#FF6600',
-    $primaryBlack: '#00ff00',
+    $primaryBlack: '#f8f8f8',
     $white: '#ffffff',
-    $button: '#828282',
+    $button: '#151616',
+    $buttonText: '#ff6600',
 
 
 

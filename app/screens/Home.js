@@ -1,30 +1,29 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { LoginButton, GoogleLogin, FootButton } from '../components/Buttons';
+import { View, Text, ImageBackground } from 'react-native';
+import { LoginButton, GoogleLogin, FootButton, SignupBtn } from '../components/Buttons';
 import { Container } from "../components/Container";
 import { Logo } from "../components/Logo";
+import { UserLogin, UserRegTextInput } from "../components/TextInputs/";
 
 class Home extends Component {
 
     handleButtonPress = () => {
+        console.log('Google button pressed');
+    }
+    handleFbButton = () => {
         console.log('Facebook button pressed');
+    }
+    handleEmailSignup = () => {
+        console.log('email sign up pressed');
+    }
+    handleLogin = () => {
+        console.log('Login pressed');
     }
     render() {
         return (
             <Container>
-                <Logo />
-                <LoginButton
-                    text="Continue with facebook"
-                    icon={require('../components/Buttons/images/fb.png')}
-                />
-                <GoogleLogin
-                    text="Continue with Google"
-                    icon={require('../components/Buttons/images/google.png')}
-                />
-                <FootButton
-                    logintext="Already have an account?"
-                    boldtext="Login"
-                />
+                <UserLogin />
+
             </Container>
         );
     }
