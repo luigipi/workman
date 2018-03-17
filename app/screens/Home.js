@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground } from 'react-native';
+import { View, Text, ImageBackground, StatusBar } from 'react-native';
 import { LoginButton, GoogleLogin, FootButton, SignupBtn } from '../components/Buttons';
 import { Container } from "../components/Container";
 import { Logo } from "../components/Logo";
@@ -22,7 +22,8 @@ class Home extends Component {
     render() {
         return (
             <Container>
-                <UserLogin />
+                <StatusBar translucent={false} barStyle="light-content" />
+                <UserRegTextInput />
 
             </Container>
         );

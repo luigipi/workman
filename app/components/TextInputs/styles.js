@@ -1,11 +1,10 @@
 import EStyleSheet from "react-native-extended-stylesheet";
 
 export default EStyleSheet.create({
-    wrapper: {
+    container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'blue',
     },
     userinput: {
         width: 200,
@@ -19,7 +18,7 @@ export default EStyleSheet.create({
         paddingHorizontal: 20,
         paddingVertical: 15,
         borderBottomWidth: 1,
-        borderColor: 'red',
+        borderColor: '$screenTitle',
     },
     loginbtn: {
         backgroundColor: '$primaryOrange',
@@ -57,5 +56,9 @@ export default EStyleSheet.create({
     boldtext: {
         fontSize: 18,
         marginLeft: 2,
+    },
+    screentitle: {
+        fontSize: 28,
+        fontWeight: '500',
     },
 })
